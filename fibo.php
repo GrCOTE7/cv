@@ -13,4 +13,4 @@ function fibo($n)
 }
 
 for ($i = 0; $i <= 20; $i++)
-    echo 'fibonacci(' . $i . ') = ' . number_format(fibo($i), , ',', ' ') . '<br>';
+    echo 'fibonacci(' . $i . ') = ' . number_format(fibo($i), 0, ',', ' ') . '<br>';
