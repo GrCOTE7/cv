@@ -8,7 +8,7 @@
 <p>Pour vous inscritre dans le Club, nous avons besoin de quelques renseignements. Préparez un nom d'usage pour le Club
     et un mot de passe de 8 caractères au moins, dont vous vous souviendrez facilement.</p>
 
-<form action="inscription_p2" method="POST" name="page_1">
+<form action="inscription_p2.php" method="POST" name="page_1">
     <table cellspacing="2" cellpadding="2" border="0">
         <tr>
             <td>Votre prénom</td>
@@ -17,7 +17,7 @@
 
         <tr>
             <td>Votre adresse email</td>
-            <td><input type="TEXT" name="prenom"></td>
+            <td><input type="TEXT" name="email"></td>
         </tr>
 
         <tr>

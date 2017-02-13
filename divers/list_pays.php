@@ -5,7 +5,7 @@
  * Date: 13/02/17
  * Time: 02:49
  */
-include_once 'inc/connection.inc.php';
+include_once '../inc/connection.inc.php';
 
 $sql = 'SELECT * FROM pays ORDER BY nom';
 
