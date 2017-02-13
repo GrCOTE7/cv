@@ -11,11 +11,14 @@ $hostname = 'localhost';
 $username = 'root';
 $password = '';
 
-if (!$id_link = mysql_connect($hostname, $username, $password)) {
+if (!$dblink = mysqli_connect($hostname, $username, $password, $db)) {
     echo 'Cnx impossible à MySQL';
     exit;
 }
 
-if (!mysql_select_db($db, $id_link)) {
-    echo 'Sélection de la BdD (' . $db . ') impossible';
+if (!mysqli_set_charset($dblink, "utf8")) {
+    printf("Erreur lors du chargement du jeu de caractères utf8 : %s\n", mysqli_error($dblink));
+    exit();
+} else {
+//    printf("Jeu de caractères courant : %s\n", mysqli_character_set_name($dblink));
 }
